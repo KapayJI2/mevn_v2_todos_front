@@ -111,7 +111,7 @@ import {
 import { ElMessage } from "element-plus";
 export default {
   setup(props) {
-    const API_AUTH_LINK = ref(process.env.VUE_APP_BASE_URL + "/api/auth");
+    const API_AUTH_LINK = ref(process.env.VUE_APP_BASE_API_URL + "/api/auth");
     const responseBack = ref("");
     const router = useRouter();
     const hiddenFields = ref(false);

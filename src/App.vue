@@ -91,7 +91,7 @@ export default {
         ]);
         try {
           const response = await fetch(
-            `${process.env.VUE_APP_BASE_URL}/api/user/${store.getters.getUser.user._id}`,
+            `${process.env.VUE_APP_BASE_API_URL}/api/user/${store.getters.getUser.user._id}`,
             {
               method: "GET",
               headers: {

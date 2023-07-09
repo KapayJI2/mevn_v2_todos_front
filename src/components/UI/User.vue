@@ -49,10 +49,10 @@ export default {
     const store = useStore();
     const router = useRouter();
     const isLoading = ref(true);
-    const API_USER_LINK = ref(process.env.VUE_APP_BASE_URL + "/api/user/");
+    const API_USER_LINK = ref(process.env.VUE_APP_BASE_API_URL + "/api/user/");
     onMounted(async () => {
       await fetch(
-        `${process.env.VUE_APP_BASE_URL}/api/user/${store.getters.getUser.user._id}`,
+        `${process.env.VUE_APP_BASE_API_URL}/api/user/${store.getters.getUser.user._id}`,
         {
           method: "GET",
           headers: {

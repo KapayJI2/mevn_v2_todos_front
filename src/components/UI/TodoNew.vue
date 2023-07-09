@@ -135,7 +135,7 @@ export default {
     const editTodoDialogVisible = ref(false);
     const deleteTodoDialogVisible = ref(false);
     const createTodoDialogVisible = ref(false);
-    const API_TODO_LINK = ref(process.env.VUE_APP_BASE_URL + "/api/todo");
+    const API_TODO_LINK = ref(process.env.VUE_APP_BASE_API_URL + "/api/todo");
     onMounted(async () => {
       await fetch(API_TODO_LINK.value, {
         method: "GET",

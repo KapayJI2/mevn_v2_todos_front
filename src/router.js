@@ -5,7 +5,7 @@ import LoginPage from "@/pages/LoginPage";
 import UserPage from "@/pages/UserPage";
 import TodosPage from "@/pages/TodosPage";
 import UserInfoChange from "@/components/UI/UserInfoChange";
-const routerHistory = createWebHistory();
+const routerHistory = createWebHistory("/mevn-v2-todos");
 
 const router = createRouter({
   history: routerHistory,

@@ -51,7 +51,7 @@ export default {
   setup(_, { emit }) {
     const router = useRouter();
     const store = useStore();
-    const API_LINK_LOGIN = ref(process.env.VUE_APP_BASE_URL + "/api/auth");
+    const API_LINK_LOGIN = ref(process.env.VUE_APP_BASE_API_URL + "/api/auth");
     const responseBack = ref("");
     const handleRegistrationClick = () => {
       router.push({ name: "registration" });

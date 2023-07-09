@@ -94,7 +94,7 @@ import {
 import { ElMessage } from "element-plus";
 export default {
   setup(props) {
-    const API_USER_CHANGE_LINK = ref(process.env.VUE_APP_BASE_URL + "/api/user/");
+    const API_USER_CHANGE_LINK = ref(process.env.VUE_APP_BASE_API_URL + "/api/user/");
     const responseBack = ref("");
     const router = useRouter();
     const store = useStore();
